@@ -1,0 +1,4 @@
+sub hello()
+dim hello as strings
+hello ="this is my world of VBA"
+Msgbox hello

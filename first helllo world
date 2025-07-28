@@ -1,4 +1,5 @@
 sub hello()
-dim hello as strings
-hello ="This is our new initial branch's"
-Msgbox hello
+    Dim userInput As String
+    userInput = InputBox("Please enter your name:", "User Input")
+    MsgBox "Hello, " & userInput
+end sub

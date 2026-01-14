@@ -1,5 +1,5 @@
-sub hello()
+Sub Hello()
     Dim userInput As String
     userInput = InputBox("Please enter your name:", "User Input")
     MsgBox "Hello, " & userInput
-end sub
+End Sub

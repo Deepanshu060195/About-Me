@@ -15,7 +15,7 @@
 - **BI & Visualization**: Power BI, Tableau, Excel Dashboards  
 - **Automation & RPA**: UiPath, Blue Prism, Power Automate, VBA Macros  
 - **ERP Systems**: SAP FICO, SAP S4 HANA  
-- **Workflow Platforms**: Make.com, n8n  
+
 
 ---
 

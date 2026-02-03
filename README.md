@@ -43,7 +43,7 @@
 ---
 
 ## 📫 Connect With Me
-- 💼 [LinkedIn](https://www.linkedin.com/in/deepanshu060195)  
+- 💼 [LinkedIn](www.linkedin.com/in/deepanshu-gupta-a50149136)  
 - 📧 Email: Deepanshu060195@gmail.com  
 - 📍 Bangalore, India  
 

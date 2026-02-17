@@ -263,3 +263,17 @@ Sub FormatDateAndMonthColumns()
 
 End Sub
 
+Sub BuildExecutiveDashboard()
+
+    Call CreateDashboardSheets
+    Call CreateKPIPivot
+    Call CreateMonthlyTrendPivot
+    Call CreateTrendChart
+    Call CreateProfitDonut
+    Call CreateSlicers
+    
+    MsgBox "Executive Sales Dashboard Created!", vbInformation
+
+End Sub
+
+

@@ -1,1 +1,86 @@
+## Executive Summary
+This project focuses on <span style="color:Blue; font-size:1em; font-weight:bold">detecting fraudulent mobile financial transactions using a time-aware, behavior-driven machine learning approach.</span>
+Fraud detection is treated as a cost-sensitive classification problem, where the objective is to <span style="color:Blue; font-size:1em; font-weight:bold">minimize financial losses</span> caused by fraudulent transactions while balancing customer experience.
+
+This project aims to enhance the accuracy of detecting fraud in mobile financial transactions. By leveraging machine learning, the project seeks to predict fraudulent transactions with high precision. 
+
+<span style="color:Blue; font-size:1em; font-weight:bold">The goal is to develop a robust machine learning model to accurately identify fraudulent transactions in real-time , enabling the company to improve security, reduce financial losses, and gain insights into factors contributing to transaction fraud.</span>
+
+The analysis follows as below workflow:
+- Understanding fraud behavior over time
+- Identifying transaction patterns and account-level risks
+- Engineering behavioral features
+- Building and evaluating machine learning models
+- Quantifying financial impact and operational trade-offs
+
+Financial fraud leads to direct monetary losses, reputational damage, and customer dissatisfaction. 
+In mobile money systems, fraud often occurs through account takeovers followed by rapid fund transfers and cash-outs.
+
+### Key Challenges:
+-  <span style="color:Red; font-size:1em; font-weight:bold">Severe class imbalance (fraud is rare)
+-  <span style="color:Red; font-size:1em; font-weight:bold">High cost of missed fraud (False Negatives)
+-  <span style="color:Red; font-size:1em; font-weight:bold">Customer friction due to incorrect blocking (False Positives)
+
+Therefore, this problem is framed as a **cost-sensitive classification problem**, not an accuracy optimization problem.
+
+## Analysis Roadmap
+
+ <span style="color:Blue; font-size:1em; font-weight:bold">This project follows a structured, industry-style workflow to understand, model, and evaluate fraudulent transactions in a mobile financial system.  
+The analysis is designed to mirror how fraud analytics teams investigate, detect, and mitigate financial fraud in real-world environments.
+
+### 1. Business Understanding & Risk Framing
+- Define fraud in the context of mobile financial transactions
+- Understand business impact of fraud and model errors
+- Frame the problem as a cost-sensitive classification task
+
+### 2. Data Overview & Integrity Checks
+- Review dataset structure and feature definitions
+- Validate data quality and balance consistency
+- Identify potential data anomalies relevant to fraud detection
+
+### 3. Time-Based Transaction Analysis
+-  <span style="color:Red; font-size:1em; font-weight:bold">Analyze transaction volume and fraud occurrence over time (hourly steps)
+- Identify temporal patterns and high-risk time windows
+- Understand fraud clustering behavior
+
+### 4. Transaction Type & Fraud Strategy Analysis
+- Examine fraud distribution across transaction types
+- Identify common fraud flows (e.g., TRANSFER followed by CASH_OUT)
+- Understand operational fraud patterns
+
+### 5. Amount & Balance Behavior Analysis
+- Compare transaction amount distributions for fraud and non-fraud
+- Detect account draining behavior and balance depletion patterns
+- Identify abnormal monetary movements
+
+### 6. Entity-Level Risk Analysis
+- Analyze origin accounts to identify abnormal transaction velocity
+- Examine destination accounts for potential money mule behavior
+- Understand network-level fraud concentration
+
+### 7. Feature Engineering
+-  <span style="color:Blue; font-size:1em; font-weight:bold">Create time-based and behavioral features (velocity, balance ratios, time gaps)
+- Encode categorical variables appropriately
+- Prepare model-ready feature sets
+
+### 8. Model Development & Evaluation
+- Build and compare multiple classification models
+- Address class imbalance and threshold selection
+-  <span style="color:Blue; font-size:1em; font-weight:bold">Evaluate models using precision, recall, F1-score, and ROC-AUC
+
+### 9. Financial Impact Analysis
+- Quantify expected losses due to false positives and false negatives
+- Estimate fraud loss reduction achieved by the model
+- Assess business value of the fraud detection system
+
+### 10. Real-World Considerations & Add-On Analyses
+- Analyze fraud pattern drift over time
+- Evaluate alert volume vs fraud capture trade-offs
+- Assess customer experience impact
+- Compare rule-based, ML-based, and hybrid detection approaches
+
+### 11. Conclusions & Recommendations
+- Summarize key fraud insights and risk drivers
+- Recommend deployment and monitoring strategies
+- Outline next steps for improving fraud detection performance
 
